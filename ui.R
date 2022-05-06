@@ -45,14 +45,16 @@ shinyUI(pageWithSidebar(
                            ".csv")),
       # Horizontal line ----
       tags$hr(),
-      submitButton("Submit", icon("sync"))
-      
+      # submitButton("Submit", icon("sync")),
+      # actionButton("goButton", "Go!", class = "btn-success"),
+      width=3
     ),
     
     # Main panel for displaying outputs ----
     mainPanel(
       
-      plotOutput('plot')
+      plotOutput('heatmapP'),
+      width=8
     )
   )
 )
